@@ -9,48 +9,88 @@ Colorblind safe color palette from colorbrewer2.org
 
 
 body {
+  /*The declaration below changes the background color
+  of the entire page to light blue*/
   background-color: #abd9e9;
+  /*The declaration below changes the color of the font for body text
+  to cream*/
   color: #ffffbf;
+  /*The declaration below ensures that body text is aligned to the
+  center unless otherwise sepcified*/
   text-align: center;
+  /*The declaration below changes the margin at the top of the page to
+  give it some space before the heading*/
   margin: 0;
 }
 
 h1 {
+  /*The declaration below changes the text "my name is kasyan to peach*/
   color: #fdae61;
+  /*The declaration below adjusts the amount of space above and below the text*/
   padding: 5px;
+  /*The declaration below adjusts the amount of space above and below the blue box*/
   margin: 0;
 }
 
 #body-container {
+  /*The declaration below adjusts the background color of the main body box to peach*/
   background-color: #fdae61;
+  /*The declaration below adjusts the width the main body
+  box so it doesn't span the whole page*/
   max-width: 1000px;
+  /*The declaration below allows it to automatically horizontally
+  center the text within the container.*/
   margin: auto;
+  /*The declaration below means the height
+  of the body container will be 100% of the viewport height from top to bottom.*/
   height: 100vh;
+  /*This means the border of the body section will be peach
+  and will have a width of 2px*/
   border: 2px solid #fdae61;
+  /*This means the border of the body section will be curved at the edges by
+  a radius of 25px*/
   border-radius: 25px;
+  /* the declaration below prevents any excess text in the webpage from being
+  visible if it is too long. */
   overflow: hidden;
 }
 
 #header {
+  /*The declaration below adjusts the background color of the header to blue*/
   background-color: #2c7bb6
 }
 
 #profile-picture {
+  /*The declaration below means the profile picture will be pushed to the
+  left of the body box*/
   float: left;
 }
 
 #welcome-text {
+  /*The declaration below adjusts the space above and below the Welcome
+  text to have 25px space.*/
   padding-top: 25px;
+  /*The declaration below adjusts the font size of the welcome text to
+  25px*/
   font-size: 25px;
 }
 
 #research-interests {
+  /*The declaration below adjusts the alignment of the research interests
+  text so that its on the left */
   text-align: left;
+  /*The declaration below adjusts the font size of the research interests text to
+  25px*/
   font-size: 25px;
+  /*The declaration below means the placement is adjusted of the research interests
+  text relitive to its normal placement without adjusting other content
+  to fill the gap that it has left. */
   position: relative;
   left: 50px;
 }
 
 #copyright-footer {
+  /*The declaration below adjusts the alignment of the copyright footer
+  text so that its in the center */
   text-align: center;
 }
