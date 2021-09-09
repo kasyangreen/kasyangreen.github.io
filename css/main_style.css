@@ -50,3 +50,7 @@ h1 {
   position: relative;
   left: 50px;
 }
+
+#copyright-footer {
+  text-align: center;
+}
