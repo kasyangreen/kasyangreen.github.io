@@ -44,18 +44,27 @@
 
 
 //Task 5: Conditional statement
+// document.writeln("<button onclick='condition()''>Conditional Test</button>")
+//
+// function condition()
+// {
+//   x = confirm("Are you sure you want to proceed?");
+//   if(x)
+//   {
+//     document.writeln("You chose Okay!");
+//   }
+//   else
+//   {
+//     document.writeln("You chose Cancel!");
+//   }
+// }
 
-document.writeln("<button onclick='condition()''>Conditional Test</button>")
+//Task 6: Array
 
-function condition()
-{
-  x = confirm("Are you sure you want to proceed?");
-  if(x)
+arr = ["Joe","April","Mark","Sara"];
+for (var i=0;
+  i < arr.length;
+  i++)
   {
-    document.writeln("You chose Okay!");
+    document.writeln(arr[i],"<br>");
   }
-  else
-  {
-    document.writeln("You chose Cancel!");
-  }
-}
