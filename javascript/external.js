@@ -60,11 +60,16 @@
 // }
 
 //Task 6: Array
+// arr = ["Joe","April","Mark","Sara"];
+// for (var i=0;
+//   i < arr.length;
+//   i++)
+//   {
+//     document.writeln(arr[i],"<br>");
+//   }
 
-arr = ["Joe","April","Mark","Sara"];
-for (var i=0;
-  i < arr.length;
-  i++)
-  {
-    document.writeln(arr[i],"<br>");
-  }
+
+// Homework Assignment
+
+name = window.prompt("What is your name", "Enter your name here");
+document.write(name);
