@@ -15,6 +15,7 @@
       <img src=images/profile-picture.jpeg width=500px height=500px />
     </div>
     <div id="welcome-text">
+      My name is Kasyan.<br>
       Welcome to my webpage. <br>
       I am a student in the
       <a href="https://www.clarku.edu/departments/geography/">Geography Department</a> at
@@ -28,10 +29,20 @@
         <li>Urban Planning</li>
       </ol>
     </div>
+    <div id="copyright"> <script>
+    // Now we have created the div ID, we need to get todays date which
+    //is received below unsing the Date() function.
+    var today = new Date();
+    // this then gets the full year from todays date so we can assign it
+    //to the word copyright at the bottom of the website .
+    var year = today.getFullYear();
+    // this takes the year and then adds it to the bottom of the page with
+    //the symbol using '&copy'.
+    document.writeln("Copyright &copy; " + year);
+    </script>
+    </div>
   </div>
+
 </body>
-<footer>
-  <div id="copyright-footer">
-    &#169; 2021 by Kasyan Green
-  </div>
+
 <html>
