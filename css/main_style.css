@@ -81,7 +81,7 @@ h1 {
   text-align: left;
   /*The declaration below adjusts the font size of the research interests text to
   25px*/
-  font-size: 25px;
+  font-size: 20px;
   /*The declaration below means the placement is adjusted of the research interests
   text relitive to its normal placement without adjusting other content
   to fill the gap that it has left. */
@@ -96,8 +96,14 @@ h1 {
 }
 
 #copyright {
-  position: absolute;
+  position: fixed;
   width: 1000px;
   text-align: center;
   bottom: 20px;
+}
+
+#webmap-reviews {
+  text-align: left;
+  position: relative;
+  font-size: 15px;
 }

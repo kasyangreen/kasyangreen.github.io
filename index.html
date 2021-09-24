@@ -15,7 +15,7 @@
       </script>
     </div>
     <div id="profile-picture">
-      <img src=images/profile-picture.jpeg width=500px height=500px />
+      <img src=images/profile-picture.jpeg width=250px height=250px />
     </div>
     <div id="welcome-text">
       My name is Kasyan.<br>
@@ -32,17 +32,23 @@
         <li>Urban Planning</li>
       </ol>
     </div>
-    <div id="copyright"> <script>
-    // Now we have created the div ID, we need to get todays date which
-    //is received below unsing the Date() function.
-    var today = new Date();
-    // this then gets the full year from todays date so we can assign it
-    //to the word copyright at the bottom of the website .
-    var year = today.getFullYear();
-    // this takes the year and then adds it to the bottom of the page with
-    //the symbol using '&copy'.
-    document.writeln("Copyright &copy; " + year);
-    </script>
+    <div id="webmap-reviews">
+      <script>
+      document.write(webmap_table());
+      </script>
+    </div>
+    <div id="copyright">
+      <script>
+      // Now we have created the div ID, we need to get todays date which
+      //is received below unsing the Date() function.
+      var today = new Date();
+      // this then gets the full year from todays date so we can assign it
+      //to the word copyright at the bottom of the website .
+      var year = today.getFullYear();
+      // this takes the year and then adds it to the bottom of the page with
+      //the symbol using '&copy'.
+      document.writeln("Copyright &copy; " + year);
+      </script>
     </div>
   </div>
 
