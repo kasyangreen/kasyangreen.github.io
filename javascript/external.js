@@ -38,3 +38,10 @@ function webmap_table()
   }
   document.write("</table>");
 }
+
+function showAnswer() {
+  width = document.getElementById("user_width").value
+  height = document.getElementById("user_height").value
+        document.getElementById('answer').innerHTML =
+                    width*height;
+    }

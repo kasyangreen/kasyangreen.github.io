@@ -34,24 +34,39 @@
     </div>
     <div id="webmap-reviews">
       <script>
-      document.write(webmap_table());
+      webmap_table();
       </script>
     </div>
-    <div id="copyright">
-      <script>
-      // Now we have created the div ID, we need to get todays date which
-      //is received below unsing the Date() function.
-      var today = new Date();
-      // this then gets the full year from todays date so we can assign it
-      //to the word copyright at the bottom of the website .
-      var year = today.getFullYear();
-      // this takes the year and then adds it to the bottom of the page with
-      //the symbol using '&copy'.
-      document.writeln("Copyright &copy; " + year);
-      </script>
+
+    <div id = calculator>
+          <form><br /><br />
+            Rectangle Area Calculator <br/>
+            Width: <input type="text" id="user_width"> <br />
+            Height: <input type="text" id="user_height">
+          </form>
+          <input type="submit" onclick="showAnswer();"><br/>
+          <br/>
+          Area of your rectangle:
+          <p><span id='answer'></span></p><br/>
     </div>
+
+
   </div>
 
 </body>
-
+<footer>
+  <div id="copyright">
+    <script>
+    // Now we have created the div ID, we need to get todays date which
+    //is received below unsing the Date() function.
+    var today = new Date();
+    // this then gets the full year from todays date so we can assign it
+    //to the word copyright at the bottom of the website .
+    var year = today.getFullYear();
+    // this takes the year and then adds it to the bottom of the page with
+    //the symbol using '&copy'.
+    document.writeln("Copyright &copy; " + year);
+    </script>
+  </div>
+</footer>
 <html>
