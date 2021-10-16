@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Map</title>
+
+    <style type="text/css">
+      /* set the size of the div element that contains the map */
+      #map {
+        /*height is 400 pixels*/
+        height:400px;
+        /*width is the full screen*/
+        width:100pc;
+      }
+    </style>
+    <script>
+      //initialise and add to the map
+      function initMap() {
+        const center = { lat: -25.344, lng: 131.036};
+        const zoom = 4;
+        //[start maps_interaction_cooperative_mapoptions]
+        new google.maps.Map(document.getElementById("map"),{
+          zoom,
+          center,
+          gestureHandling: "cooperative",
+          mapId: '666a7d919246a928',
+        });
+        // [END maps_interaction_cooperative_mapoptions]
+      }
+      //[END maps_interaction_cooperative]
+    </script>
+  </head>
+  <body>
+    <!-- <h3>My Google Maps Demo</h3>-->
+    <!-- The div element for the map -->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        const myLatlng = { lat: -25.344, lng: 131.036};
+        const map = new google.maps.Map(document.getElementById("map"),{
+          zoom: 4,
+          center: myLatlng,
+        });
+        const marker = new google.maps.Marker({
+          position: myLatlng,
+          map,
+          title: "Click to zoom",
+        });
+        map.addListener("center_changed", () => {
+          // 3 seconds after the center of the map has chnaged, pan back to the marker
+          window.setTimeout(() => {
+            map.panTo(marker.getPosition());
+          }, 3000);
+        });
+        marker.addListener("click",()=>{
+          map.setZoom(8);
+          map.setCenter(marker.getPosition());
+        });
+      }
+    </script>
+
+    <!-- Async executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvCy7rENbe9k8bAWjpEAXSssCBm_9nF8A&callback=initMap"
+      async
+    ></script>
+  </body>
+</html>
