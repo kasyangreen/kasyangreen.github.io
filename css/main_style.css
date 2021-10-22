@@ -48,9 +48,7 @@ footer {
   margin: auto;
   /*The declaration below means the height
   of the body container will be 100% of the viewport height from top to bottom.*/
-  height: 100vh;
-  /*This means the border of the body section will be peach
-  and will have a width of 2px*/
+
   border: 2px solid #fdae61;
   /*This means the border of the body section will be curved at the edges by
   a radius of 25px*/
@@ -102,7 +100,8 @@ footer {
 
 #copyright {
   text-align: center;
-  width: 100%
+  width: 100%;
+  margin: 10px;
 }
 
 #webmap-reviews {
@@ -113,5 +112,5 @@ footer {
 
 #calculator {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
