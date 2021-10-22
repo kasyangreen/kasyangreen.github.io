@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
   crossorigin=""/>
+  <link rel="stylesheet" type='text/css' href="css/map_style.css">
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script>
@@ -88,9 +89,42 @@
       // this takes the year and then adds it to the bottom of the page with
       //the symbol using '&copy'.
       document.writeln("Copyright &copy; " + year);
+
+
+      var marker = L.marker([51.5, -0.09]).addTo(mymap);
+      var circle = L.circle([51.508, -0.11], {
+        color: "red",
+        fillColor: "#f03",
+        fillOpacity: 0.5,
+        radius: 500
+      }).addTo(mymap);
+
+      var polygon = L.polygon([
+        [51.509,-0.08],
+        [51.503, -0.06],
+        [51.51,-0.047]
+      ]).addTo(mymap);
+
+      marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+      circle.bindPopup("I am a circle.");
+      polygon.bindPopup("I am a polygon.");
+
+      marker.on('click', function(e){
+        mymap.setView(e.latlng,14);
+      });
+
+      circle.on('click', function(e){
+        mymap.setView(e.latlng,13);
+      });
+
+      polygon.on('click', function(e){
+        mymap.setView(e.latlng,13);
+      });
+
       </script>
+
     </div>
-    
+
   </div>
 
 </body>
