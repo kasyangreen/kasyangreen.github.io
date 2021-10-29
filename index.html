@@ -11,9 +11,8 @@
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script>
   </script>
-
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@d4cbd36122efc8d17152b4177ed0e12165305441/dist/css/L.Control.OpenCageData.Search.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@d4cbd36122efc8d17152b4177ed0e12165305441/dist/js/L.Control.OpenCageSearch.min.js"></script>
 
   <title>Kasyan Green</title>
   <!-- All styling for this html document are contained in this external css
@@ -21,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="css/main_style.css">
   <script src="javascript/external.js"></script>
   <script src="javascript/secret_keys.js"></script>
+  <script src="javascript/map.js"></script>
 </head>
 <body>
   <div id="body-container">
@@ -65,69 +65,13 @@
           <p><span id='answer'></span></p><br/>
     </div>
 
-    <h3>My First Webmap</h3>
+    <h3>Geocoding API</h3>
     <div id = "mapid" style="width: 600px; height: 400px; margin: auto;">
-      <script>
-      var mymap = L.map('mapid')
-
-      /*MAPBOX TILE LATER
-      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        maxZoom: 18,
-        id: 'mapbox.mapbox-traffic-v1',
-        accessToken: mapbox_access_token,
-        }).addTo(mymap);
-        */
-        L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',{}).addTo(mymap);
-
-        var marker = L.marker([51.5, -0.09]).addTo(mymap);
-        var circle = L.circle([51.508, -0.11], {
-          color: "red",
-          fillColor: "#f03",
-          fillOpacity: 0.5,
-          radius: 500
-        }).addTo(mymap);
-
-        var polygon = L.polygon([
-          [51.509,-0.08],
-          [51.503, -0.06],
-          [51.51,-0.047]
-        ]).addTo(mymap);
-
-        marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-        circle.bindPopup("I am a circle.");
-        polygon.bindPopup("I am a polygon.");
-
-        marker.on('click', function(e){
-          mymap.setView(e.latlng,14);
-        });
-
-        circle.on('click', function(e){
-          mymap.setView(e.latlng,13);
-        });
-
-        polygon.on('click', function(e){
-          mymap.setView(e.latlng,13);
-        });
-
-      var ZoomViewer = L.Control.extend({
-        onAdd: function(){
-          var guage = L.DomUtil.create('div');
-          guage.style.width = '200px';
-          guage.style.background = 'rgba(0,0,0,0.5)';
-          guage.style.textAlign = 'left';
-          mymap.on('zoomstart zoom zoomend', function(ev){
-            guage.innerHTML = ' Zoom level: ' + mymap.getZoom();
-          })
-          return guage;
-        }
-      });
-
-      (new ZoomViewer).addTo(mymap);
-      mymap.setView([0,0],1);
-
-
-      </script>
+      <!-- <script src="javascript/map.js"> </script> -->
+      <script> createMap() </script>
     </div>
+
+
 
     <div id="copyright">
       <script>
