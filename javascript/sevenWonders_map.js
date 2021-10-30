@@ -1,6 +1,77 @@
+
+
 function createMap(){
 
 var mymap = L.map('mapid')
+
+
+var greenIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+var goldIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-gold.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+var redIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+var orangeIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+var violetIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+var blueIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+var yellowIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+
+
+
+
 
 L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",{}).addTo(mymap);
 
@@ -105,47 +176,47 @@ const RomeString =
     "</div>";
 
 
-var Indiamarker = L.marker(IndiaLocation)
+var Indiamarker = L.marker(IndiaLocation, {icon: greenIcon})
               .addTo(mymap)
               .bindPopup(IndiaString)
               .on('click', function(e){
-                mymap.setView(e.latlng,4);
+                mymap.setView(e.latlng,4),Indiamarker.bounce(3);
               });
-var Chinamarker = L.marker(ChinaLocation)
+var Chinamarker = L.marker(ChinaLocation, {icon: goldIcon})
               .addTo(mymap)
               .bindPopup(ChinaString)
               .on('click', function(e){
-                mymap.setView(e.latlng,4);
+                mymap.setView(e.latlng,4),Chinamarker.bounce(3);
               });
-var Jordanmarker = L.marker(JordanLocation)
+var Jordanmarker = L.marker(JordanLocation, {icon: redIcon})
               .addTo(mymap)
               .bindPopup(JordanString)
               .on('click', function(e){
-                mymap.setView(e.latlng,4);
+                mymap.setView(e.latlng,4),Jordanmarker.bounce(3);
               });
-var Brazilmarker = L.marker(BrazilLocation)
+var Brazilmarker = L.marker(BrazilLocation, {icon: orangeIcon})
               .addTo(mymap)
               .bindPopup(BrazilString)
               .on('click', function(e){
-                mymap.setView(e.latlng,4);
+                mymap.setView(e.latlng,4),Brazilmarker.bounce(3);
               });
-var Perumarker = L.marker(PeruLocation)
+var Perumarker = L.marker(PeruLocation, {icon: violetIcon})
               .addTo(mymap)
               .bindPopup(PeruString)
               .on('click', function(e){
-                mymap.setView(e.latlng,4);
+                mymap.setView(e.latlng,4),Perumarker.bounce(3);
               });
-var Mexicomarker = L.marker(MexicoLocation)
+var Mexicomarker = L.marker(MexicoLocation, {icon: blueIcon})
               .addTo(mymap)
               .bindPopup(MexicoString)
               .on('click', function(e){
-                mymap.setView(e.latlng,4);
+                mymap.setView(e.latlng,4),Mexicomarker.bounce(3);
               });
-var Romemarker = L.marker(RomeLocation)
+var Romemarker = L.marker(RomeLocation, {icon: yellowIcon})
               .addTo(mymap)
               .bindPopup(RomeString)
               .on('click', function(e){
-                mymap.setView(e.latlng,4);
+                mymap.setView(e.latlng,4),Romemarker.bounce(3);
               });
 
 
@@ -154,8 +225,16 @@ var Romemarker = L.marker(RomeLocation)
 
 
 mymap.setView([25,100],2);
+mymap.addControl(new L.Control.Fullscreen());
+
+L.Control.boxzoom({
+            position:'topleft',
+            // keepOn: true,
+        }).addTo(mymap);
+L.control.mousePosition().addTo(mymap);
 
 }
+
 
 /*MAPBOX TILE LATER
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
