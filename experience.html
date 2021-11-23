@@ -46,7 +46,7 @@
         <div class="container">
             <div class="project-content-about">
                 <h1>
-                Browse through some of my more recent projects and work and experience. <br>For more information, click on the individual project to reveal a popup window.
+                Browse through some of my more recent projects and work and experience. For more information, click on the individual project to reveal a popup window.
                 </h1>
             </div>
             <div class="project-row">
@@ -136,17 +136,10 @@
                     </button>
                 </div>
             </div>
+            <img src="images/orgs.png" alt="" class="orgsphoto">
         </div>
     </section>
-    <!-- <section class="more-projects">
-        <div class="more-work">
-            <ul>
-                <li>
-                    https://storymaps.arcgis.com/stories/4d0ecae88b2540fe987c9721955f4163
-                </li>
-            </ul>
-        </div>
-    </section> -->
+
     <footer>
         <div class="container">
             <div class="back-to-top">
@@ -164,7 +157,7 @@
                         <h4>Follow</h4>
                         <ul class="social-icons">
                             <li>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/kgre"><i class="fab fa-linkedin-in"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -185,24 +178,25 @@
         <div class="popup-content">
             <div class="popup-header">
               <span class="close1">&times;</span>
-              <h2>Time Series Analysis of Mangrove in Myanmar</h2>
+              <h2>Class Project | Time Series Analysis of Mangrove in Myanmar</h2>
             </div>
             <div class="popup-body">
             <div class="project-popupphotodescriptionholder">
               <div class="project-popupphotodescription">
               <br>
+              <p><b>Spring 2021</b><p>
+              <br>
               <p>This project used Google Earth Engine to map Mangrove deforestation in Myanmar since 1998, just before the Ramsar Convention on Wetlands, and the current day using a Mangrove index.</p>
               <br>
               <p>Mangrove forests are unique because they can be differentiated from other terrestrial forests using remote sensing. This is done using a wetness index (MNDWI), to detect moisture, and a vegetation index (NDVI), to detect canopy. When you combine these, it’s possible to create a “Mangrove Index” (MMRI). These three indexes can be combined to create a color composite showing mangrove forest in bright green (Composite RGB = Wetness Index, Vegitation Index, Mangrove Index).</p>
               <br>
-              </div></div>
+              <a href="https://kgreen97.users.earthengine.app/view/myanmarmangrove" class="body-btn">Earth Engine Webmap</a>
+              <p><br></p>
+              </div>
+              </div>
               <div class="project-popupphotoholder">
               <img src="images/projects-popupimage/myanmar-mangrove.png" alt="" class="project-popupphoto">
               </div>
-            </div>
-
-            <div class="popup-footer">
-            <p>A link to the final Earth Engine webmap I created can be found <a href="https://kgreen97.users.earthengine.app/view/myanmarmangrove">here</a></p>
             </div>
           </div>
     </div>
@@ -213,32 +207,52 @@
         <div class="popup-content">
             <div class="popup-header">
               <span class="close2">&times;</span>
-              <h2>Modal Header</h2>
+              <h2>Class Project | Twitter API Analysis of COVID Hotspots</h2>
             </div>
             <div class="popup-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
-            </div>
-            <div class="popup-footer">
-              <h3>Modal Footer</h3>
+            <div class="project-popupphotodescriptionholder">
+              <div class="project-popupphotodescription">
+              <br>
+              <p><b>Fall 2021</b><p>
+              <br>
+              <p>This project used a twitter API, snscrape, alongside a geocoding API, nominatim, to plot the location of tweets realating to COVID across a two week period in Massachusetts.</p>
+              <br>
+              <p>One of the challenges was the variety of names people have for COVID, including the popular online nickname "the panini". Data aquisition was done through python, whilst mapping and analysis was accomplished using ArcPro. Results were inconclusive, and highlighted a demand for more research into the degree to which twitter analysis can harness the true sentiment of an overall population.</p>
+              <br>
+              </div>
+              </div>
+              <div class="project-popupphotoholder">
+              <img src="images/projects-popupimage/twitter-covid.png" alt="" class="project-popupphoto">
+              </div>
             </div>
           </div>
     </div>
 
-    <!-- Project 2 -->
+    <!-- Project 3 -->
     <div id="box-3" class="popup3">
 
         <div class="popup-content">
             <div class="popup-header">
               <span class="close3">&times;</span>
-              <h2>Project 3</h2>
+              <h2>Research Assistant | Mapping Coastal Ecosystems Using Terrset</h2>
             </div>
             <div class="popup-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
-            </div>
-            <div class="popup-footer">
-              <p><a href="http://www.aquaculture.earth/coastal/index.html">Clark Labs Aquaculture Dataset</a></p>
+            <div class="project-popupphotodescriptionholder">
+              <div class="project-popupphotodescription">
+              <br>
+              <p><b>November 2020 - Present</b><p>
+              <br>
+              <p>Clark University is home to the developers of Terrset (formerly IDRISI), where I work as part of a team to map Mangrove, Wetland, and Pond Aquaculture in coastal equatorial regions of the world.</p>
+              <br>
+              <p>Maps are created using TerrSet Software to classify Landsat 5 and Landsat 8 imagery in target countries such as China, Brazil, Honduras, El Salvador, Nicaragua, and the Philippines. The work is funded through the Gordon and Betty Moore Foundation and daily tasks include using supervised clasification techniques such as Mahalanobis, and Multi-Layer Perceptron.</p>
+              <br><br>
+              <a href="http://www.aquaculture.earth/coastal/index.html" class="body-btn">Terrset's Aquaculture Product</a>
+              <p><br></p>
+              </div>
+              </div>
+              <div class="project-popupphotoholder">
+              <img src="images/projects-popupimage/terrset.png" alt="" class="project-popupphoto">
+              </div>
             </div>
           </div>
     </div>
@@ -249,14 +263,23 @@
         <div class="popup-content">
             <div class="popup-header">
               <span class="close4">&times;</span>
-              <h2>Project 4</h2>
+              <h2>GIS Analyst Intern | Generation of a Topographic Basemap of Niassa National Reserve</h2>
             </div>
             <div class="popup-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
-            </div>
-            <div class="popup-footer">
-              <h3>Modal Footer</h3>
+            <div class="project-popupphotodescriptionholder">
+              <div class="project-popupphotodescription">
+              <br>
+              <p><b>Summer 2020</b><p>
+              <br>
+              <p>Spearheaded the creation of a comprehensive map of Niassa National Reserve for the Wildlife Conservation Societys operational planning and fieldwork. This involved ~100 hours digitizing over 5800 kilometers of roads.</p>
+              <br>
+              <p>A key facet of this was improving the existing road maps alongside Airfields, Bridges, and Villages. A mosaic of high-resolution sattelite imagery was used from different dates. Digitization, analysis, database management, and final map compositions were created in ArcPro.</p>
+              <br><br>
+              </div>
+              </div>
+              <div class="project-popupphotoholder">
+              <img src="images/projects-popupimage/wcs-mozambique.png" alt="" class="project-popupphoto">
+              </div>
             </div>
           </div>
     </div>
@@ -265,16 +288,27 @@
     <div id="box-5" class="popup5">
 
         <div class="popup-content">
-            <div class="modal-header">
+            <div class="popup-header">
               <span class="close5">&times;</span>
-              <h2>Project 5</h2>
+              <h2>Advocate | Regeneration of Hadwen Arboretum</h2>
             </div>
             <div class="popup-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
-            </div>
-            <div class="popup-footer">
-              <h3>Modal Footer</h3>
+            <div class="project-popupphotodescriptionholder">
+              <div class="project-popupphotodescription">
+              <br>
+              <p><b>Fall 2019 - Present</b><p>
+              <br>
+              <p>Over the course of the 2019 Fall semester, as part of an Urban Forestry class, I was part of a team of students to devise and implement a management strategy for the University’s Hadwen Arboretum.</p>
+              <br>
+              <p>I have remained a part of the team since then and continue to work in the space, updating maps, conducting trail maintenance, and building various items such as benches for the trail. As a result, the space is now unrecognisable, and has been featured in many of the University publications.</p>
+              <br><br>
+              <a href="https://clarknow.clarku.edu/2019/12/18/clark-students-help-revitalize-an-ailing-neighborhood-forest/" class="body-btn">University Publication</a>
+              <p><br></p>
+              </div>
+              </div>
+              <div class="project-popupphotoholder">
+              <img src="images/projects-popupimage/arboretum.png" alt="" class="project-popupphoto">
+              </div>
             </div>
           </div>
     </div>
@@ -283,16 +317,25 @@
     <div id="box-6" class="popup6">
 
         <div class="popup-content">
-            <div class="modal-header">
+            <div class="popup-header">
               <span class="close6">&times;</span>
-              <h2>Project 6</h2>
+              <h2>Senior Thesis | Deforestation Trends in Belize</h2>
             </div>
             <div class="popup-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
-            </div>
-            <div class="popup-footer">
-              <h3>Modal Footer</h3>
+            <div class="project-popupphotodescriptionholder">
+              <div class="project-popupphotodescription">
+              <br>
+              <p><b>Fall 2020 - Present</b><p>
+              <br>
+              <p>This project employed ArcPro, alongside the Hansen et. al. deforestation dataset to researching twenty years of deforestation in Belize, and begin grappling with the multitude of drivers behind this.</p>
+              <br>
+              <p>Analysis was supplemented by NASA FIRMS fire point dataset, and results suggest that since 2000, although some of it has since regenerated, Belize lost 11% of its original forest cover. This research was awarded $500 for significant research through Marcia V. Szugda-Emani Memorial Environmental Scholarship.</p>
+              <br><br>
+              </div>
+              </div>
+              <div class="project-popupphotoholder">
+              <img src="images/projects-popupimage/belize.png" alt="" class="project-popupphoto">
+              </div>
             </div>
           </div>
     </div>
@@ -301,37 +344,87 @@
     <div id="box-7" class="popup7">
 
         <div class="popup-content">
-            <div class="modal-header">
+            <div class="popup-header">
               <span class="close7">&times;</span>
-              <h2>Project 7</h2>
+              <h2>GIS Analyst Intern | Greater Worcester Land Trust</h2>
             </div>
             <div class="popup-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
-            </div>
-            <div class="popup-footer">
-              <h3>Modal Footer</h3>
+            <div class="project-popupphotodescriptionholder">
+              <div class="project-popupphotodescription">
+              <br>
+              <p><b>Summer 2020</b><p>
+              <br>
+              <p>Awarded $3500 stipend through my University to implement baseline documentation systems for 2600 acres of GWLT properties.</p>
+              <br>
+              <p>Work required implementing skills in ARCMap and ARCPad to run tasks including geo-referencing, shapefile editing, and supervised classifications.</p>
+              <br><br>
+              <a href="https://clarknow.clarku.edu/2019/09/12/kasyan-green-21-maps-worcesters-open-space-and-his-future/" class="body-btn">Publication on My Work</a>
+              <p><br></p>
+              </div>
+              </div>
+              <div class="project-popupphotoholder">
+              <iframe src="https://player.vimeo.com/video/366302780?h=96126dc053&color=ffffff&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="project-popupvideo"></iframe>
+              </div>
             </div>
           </div>
     </div>
 
-    <!-- Project 8 -->
+    <!-- Project 4 -->
     <div id="box-8" class="popup8">
 
         <div class="popup-content">
-            <div class="modal-header">
+            <div class="popup-header">
               <span class="close8">&times;</span>
-              <h2>Project 8</h2>
+              <h2>Final Project | Mapping Coastal Flooding Vulnerability in East Anglia</h2>
             </div>
             <div class="popup-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
-            </div>
-            <div class="popup-footer">
-                <p><a href="https://storymaps.arcgis.com/stories/5db3a3de047a481b99bd9f9d777f8d82">ESRI StoryMap Link</a></p>
+            <div class="project-popupphotodescriptionholder">
+              <div class="project-popupphotodescription">
+              <br>
+              <p><b>Summer 2020</b><p>
+              <br>
+              <p>This project used GIS and Remote Sensing to map vulnerability to flooding across the East Anglian Region using Terrsets Climate Change and Adaptation Modeller</p>
+              <br>
+              <p>Challenges along the way included trying to incorporate flood defences into my models, which have a significant impact on coastal vulnerability this region. Results align with existing literature to show that the vast majority of East Anglia is incredibly vulnerable to climate change.</p>
+              <br><br>
+              <a href="https://storymaps.arcgis.com/stories/5db3a3de047a481b99bd9f9d777f8d82" class="body-btn">Final Storymap Product</a>
+              <p><br></p>
+              </div>
+              </div>
+              <div class="project-popupphotoholder">
+              <img src="images/projects-popupimage/east-anglia.png" alt="" class="project-popupphoto">
+              </div>
             </div>
           </div>
     </div>
+
+    <!-- Project 8
+    <div id="box-8" class="popup8">
+
+        <div class="popup-content">
+            <div class="popup-header">
+              <span class="close8">&times;</span>
+              <h2>Final Project | Mapping Coastal Flooding Vulnerability in East Anglia</h2>
+            </div>
+            <div class="popup-body">
+            <div class="project-popupphotodescriptionholder">
+              <div class="project-popupphotodescription">
+              <br>
+              <p><b>Summer 2020</b><p>
+              <br>
+              <p>This project used GIS and Remote Sensing to map vulnerability to flooding across the East Anglian Region using Terrsets Climate Change and Adaptation Modeller</p>
+              <br>
+              <p>Results showed that the vast majority of East Anglia is incredibly vulnerable to climate change, challenges along the way included trying to incorporate flood defences into my models, which have a significant impact on coastal vulnerability this region. </p>
+              <br><br>
+              <a href="https://storymaps.arcgis.com/stories/5db3a3de047a481b99bd9f9d777f8d82" class="body-btn">Final Storymap Product</a>
+              <p><br></p>
+              </div>
+              <div class="project-popupphotoholder">
+              <img src="images/projects-popupimage/east-anglia.png" alt="" class="project-popupphoto">
+              </div>
+            </div>
+          </div>
+    </div> -->
 
 
 

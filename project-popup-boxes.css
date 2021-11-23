@@ -1,5 +1,13 @@
 
 
+.popup-header {
+  padding: 2px 16px;
+  min-height: 3rem;
+  font: var(--main-font);
+  font-size: 2rem;
+  background-color: var(--body-font-color);
+  color: white;
+}
 
 /* The popup (background) */
 .popup1 {
@@ -116,38 +124,6 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-
-
-
-
-  
-/* popup Content */
-.popup-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-  
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-  
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-  
-/* The Close Button */
 .close1 {
   color: white;
   float: right;
@@ -248,14 +224,39 @@
   text-decoration: none;
   cursor: pointer;
 }
-.popup-header {
-  padding: 2px 16px;
-  min-height: 3rem;
-  font: var(--main-font);
-  font-size: 2rem;
-  background-color: var(--body-font-color);
-  color: white;
+
+
+
+
+  
+/* popup Content */
+.popup-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
+  
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+  
+/* The Close Button */
+
   
 .popup-body {padding: 2px 16px;}
   
@@ -265,11 +266,23 @@
   color: white;
 }
 
+.project-popupphoto{
+  border: 2px solid var(--body-font-color);
+  margin-bottom: 2rem;
+  margin-top:1rem;
+}
+
+.project-popupvideo{
+  margin-bottom: 2rem;
+  height: 30vw;
+  width: 50vw;
+  margin-top:1rem;
+}
 
 @media screen and (min-width: 900px){
 
   .project-popupphotodescriptionholder{
-    width: 40%;
+    width: 40pc;
     text-align: justify;
     margin: 2rem;
   }
@@ -279,16 +292,24 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .body-btn.project-link{
+    text-align: center;
+    border-top: 2px solid;
+    border-bottom: none;
+  }
   
 
   .project-popupphotoholder{
-    width: 60%;
+    width: 60pc;
     margin: 2rem;
     justify-items: center;
     vertical-align: middle;
   }
   .project-popupphoto{
-    border: 2px solid var(--body-font-color);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
 
@@ -297,6 +318,10 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
+  }
+
+  .responsive-close{
+    display: none;
   }
 
 
