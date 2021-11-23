@@ -221,6 +221,7 @@ header{
 
 .profile-picture{
     width: auto;
+    min-width: min-content;
     height: 600px;
 }
 
@@ -408,7 +409,7 @@ header{
 }
 
 .orgsphoto{
-    width: 60vw;
+    width: 90vw;
     max-width: 800px;
     padding: 3.5rem;
 }
@@ -651,6 +652,12 @@ a:hover{
         justify-content: center;
         height: 100pc;
         font-size: 20vw;
+    }
+
+    .orgsphoto{
+        width: 60vw;
+        max-width: 800px;
+        padding: 3.5rem;
     }
 
     .sub-headline{
