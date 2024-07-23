@@ -10,6 +10,27 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
+
+		<base target="_top">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	
+		<style>
+			html, body {
+				height: 100%;
+				margin: 0;
+			}
+			.leaflet-container {
+				height: 400px;
+				width: 600px;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -31,13 +52,42 @@
 							<article class="post featured" id="projects">
 								<header class="major">
 									<p>GIS professional experienced in leading and executing diverse GIS projects, from generating multi-temporal land cover classifications and improving data import processes to deploying and administering ArcGIS Online Organizations.</p>
-								<ul class="actions special">
-									<li><a href="images/KGreen_Resume.pdf" class="button">Download Resume</a></li>
-								</ul>
-								<a class="image main"><img src="images/Headshots.JPG" alt="" /></a>
+								
+								
+								<!--<a class="image main"><img src="images/Headshots.JPG" alt="" /></a>-->
 							</header>
-							<br/><br/><br/>
-							<h1>Geospatial Projects</h1>		
+							<h1>Project Experience</h1>
+							<div id="map" class="image main"></div>
+							<script>
+
+								const map = L.map('map',{ zoomControl: false }).setView([24, 5], 2);
+
+								const tiles = L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+									attribution: '&copy; Esri',
+									maxZoom: 19,
+								}).addTo(map);
+
+								var orangeIcon = L.icon({
+									iconUrl: 'images/OrangeGlow.png',
+									iconSize:     [20, 15], // size of the icon
+								});
+
+								const myanmar = L.marker([15.772289, 95.150224],{icon: orangeIcon}).addTo(map)
+									.bindPopup('<b>Myanmar</b><br />Mangrove Trend Analysis');
+								const belize = L.marker([17.031697, -88.700485],{icon: orangeIcon}).addTo(map)
+									.bindPopup('<b>Belize</b><br />Deforestation Analyses');
+								const eastAnglia = L.marker([52.628587, 1.156694],{icon: orangeIcon}).addTo(map)
+									.bindPopup('<b>England</b><br />Multicriteria Evaluation');
+								const worcester = L.marker([42.260873, -71.800977],{icon: orangeIcon}).addTo(map)
+									.bindPopup('<b>Massachusetts</b><br />Open Space Assessments');
+								const brazil = L.marker([0.165892, -49.962141],{icon: orangeIcon}).addTo(map)
+									.bindPopup('<b>Brazil</b><br />Coastal Ecosystem Mapping');
+								const mozambique = L.marker([-11.888121, 37.316642],{icon: orangeIcon}).addTo(map)
+									.bindPopup('<b>Mozambique</b><br />Topographical Map Digitization');
+
+									
+
+							</script>
 							</article>
 						<!-- Posts -->
 							<section class="posts">
@@ -123,7 +173,9 @@
 
 						<!-- Footer -->
 							<footer>
-								
+								<ul class="actions special">
+									<li><a href="images/KGreen_Resume.pdf" class="button">Download Resume</a></li>
+								</ul>
 							</footer>
 
 					</div>
