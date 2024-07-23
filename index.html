@@ -60,7 +60,7 @@
 							<div id="map" class="image main"></div>
 							<script>
 
-								const map = L.map('map',{ zoomControl: false }).setView([24, 5], 2);
+								const map = L.map('map').setView([24, 5], 2);
 
 								const tiles = L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
 									attribution: '&copy; Esri',
