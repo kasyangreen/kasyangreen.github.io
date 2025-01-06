@@ -186,6 +186,26 @@ footer {
 }
 
 @media (max-width: 768px) {
+	nav {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center-align the links */
+        gap: 10px; /* Add spacing between links */
+    }
+
+    nav a {
+        width: 88%; /* Make links full-width */
+        text-align: center;
+        padding: 10px; /* Increase padding for better tap targets */
+        font-size: 1rem; /* Slightly larger font for clarity */
+		border: 1px solid #753c01;
+		background-color: #753d016d;
+    }
+
+    nav a.active {
+        background-color: #753c01; /* Ensure active link stands out */
+        color: #fff;
+    }
     .about-container {
         flex-direction: column; /* Stack items vertically */
         align-items: center;
@@ -215,17 +235,21 @@ footer {
         height: 100px;
     }
 
+    .contact-text {
+        display: flex;
+        flex-direction: column; /* Stack the links vertically */
+        align-items: center; /* Center-align links */
+        gap: 10px; /* Add spacing between links */
+    }
+
     .contact-text a {
-        padding: 8px 16px; /* Smaller buttons */
-        font-size: 0.9rem;
+        width: 100%; /* Full-width buttons */
+        text-align: center;
+        padding: 10px; /* Larger clickable area */
+        font-size: 1rem; /* Increase font size for readability */
     }
 
     header h1 {
         font-size: 2rem;
-    }
-
-    nav a {
-        font-size: 0.8rem; /* Smaller font for navigation links */
-        padding: 5px;
     }
 }
