@@ -178,7 +178,7 @@ footer {
 }
 
 .about img {
-    width: 80%;
+    width: 60%;
     object-fit: cover;
     flex-shrink: 0;
     display: block; /* Ensures the image is treated as a block element */
